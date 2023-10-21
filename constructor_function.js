@@ -3,8 +3,12 @@
 // 생성자 함수에서 this는 생성된 인스턴스 가리킴
 
 function Person(name, age){
-    Person.name = name;
-    this.age = age;
+    this.name = name;
+    Person.age = age;
+
+    this.hi = ()=>{
+        console.log(this.name + " ㅎㅇ");
+    }
 };
 
 
@@ -12,3 +16,4 @@ function Person(name, age){
 let person1 = new Person("헨니",26);
 
 console.log(person1);
+person1.hi();
