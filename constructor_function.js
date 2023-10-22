@@ -20,8 +20,7 @@ let person1 = new Person("헨니", 26);
 console.log(person1);
 // person1.hi();
 
-// -----------------------------------------------------------------
-// 클래스
+// --------------------------------------
 class User {
   constructor(name) {
     this.name = name;
@@ -35,3 +34,13 @@ class User {
 // 사용법:
 let user = new User("Hennie");
 user.sayHi();
+
+// --------------------------------------
+// 위의 생성자 함수를 클래스로 변환
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    Person.age = age;
+    console.log(this);
+  }
+}
