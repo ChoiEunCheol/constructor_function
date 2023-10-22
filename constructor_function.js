@@ -4,19 +4,34 @@
 // 생성자 함수는 인스턴스 생성 -> 초기화 -> 반환의 과정을 거침
 // return문은 생략
 
-function Person(name, age){
-    this.name = name;
-    Person.age = age;
-    console.log(this);
+function Person(name, age) {
+  this.name = name;
+  Person.age = age;
+  console.log(this);
 
-    // this.hi = ()=>{
-    //     console.log(this.name + " ㅎㅇ");
-    // }
-};
-
+  // this.hi = ()=>{
+  //     console.log(this.name + " ㅎㅇ");
+  // }
+}
 
 //생성자 함수는 객체를 쉽게 생성하는 역할
-let person1 = new Person("헨니",26);
+let person1 = new Person("헨니", 26);
 
 console.log(person1);
 // person1.hi();
+
+// -----------------------------------------------------------------
+// 클래스
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHi() {
+    console.log(this.name);
+  }
+}
+
+// 사용법:
+let user = new User("Hennie");
+user.sayHi();
