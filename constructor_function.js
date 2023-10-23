@@ -49,10 +49,24 @@
 // 생성자 함수가 보안에 유리할 수 있음 -> 이유 알아보기는 과제
 // 상황에 맞춰서 사용
 
-function makeObjectTwo(a,b,c){
-  this.id = a;
-  this.password = b;
-  this.email = c;
+// function makeObjectTwo(a,b,c){
+//   this.id = a;
+//   this.password = b;
+//   this.email = c;
+// }
+
+// let result = new makeObjectTwo("아이디테스트", "패스워드테스트", "이메일테스트");
+
+// console.log(result);
+
+// ---------------------------------------
+
+class makeObjectTwo {
+  constructor(a, b, c) {
+    this.id = a;
+    this.password = b;
+    this.email = c;
+  }
 }
 
 let result = new makeObjectTwo("아이디테스트", "패스워드테스트", "이메일테스트");
