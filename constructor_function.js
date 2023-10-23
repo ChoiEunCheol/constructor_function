@@ -61,7 +61,7 @@
 
 // ---------------------------------------
 
-class makeObjectTwo {
+class MakeObjectTwo {
   constructor(a, b, c) {
     this.id = a;
     this.password = b;
@@ -69,10 +69,12 @@ class makeObjectTwo {
   }
 }
 
-let result = new makeObjectTwo("아이디테스트", "패스워드테스트", "이메일테스트");
+let result = new MakeObjectTwo("아이디테스트", "패스워드테스트", "이메일테스트");
 
 console.log(result);
 
 // ---------------------------------------
 // 생성자 함수 대신 클래스를 쓰는 이유
 // css의 클래스와는 다름!
+// 생성자 함수가 보통 함수들과 비슷하게 생겨서 구분이 힘들기 때문에
+// 최근에는 클래스를 선호하기도 함
